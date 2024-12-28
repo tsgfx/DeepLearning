@@ -6,7 +6,7 @@ def practice_list():
     列表练习
     :return:
     """
-    my_list =['zhangsan','lisi','wangwu']
+    my_list = ['zhangsan', 'lisi', 'wangwu']
     # 取值
     print(my_list[0])
     # 查找元素
@@ -15,7 +15,7 @@ def practice_list():
     my_list.append('zhaoliu')
     print(my_list)
     # 插入
-    my_list.insert(1,'xiaoming')
+    my_list.insert(1, 'xiaoming')
     print(my_list)
     # 删除
     my_list.remove('lisi')
@@ -31,6 +31,7 @@ def practice_list():
     print(id(my_list))
     del my_list
     # print(id(my_list) # error
+
 
 def practice_list_operate():
     my_list = ['zhangsan', 'lisi', 'wangwu', 'zhaoliu']
@@ -50,6 +51,7 @@ def practice_list_operate():
     while i < len(my_list):
         print(my_list[i])
         i += 1
+
 
 def init_list():
     a = [x for x in range(10)]
@@ -71,32 +73,33 @@ def init_list():
     d = [x if x % 2 == 0 else x ** 2 for x in range(10)]
     print(d)
 
+
 def simplyfy_list():
     """
     列表的转化
     :return:
     """
-    a = [1,2,3,4,5]
-    b = [1,2,3]
+    a = [1, 2, 3, 4, 5]
+    b = [1, 2, 3]
     print(id(a))
     print(a * 2)
     print(a + b)
     print(a)
-    print(id(a)) # 不变
+    print(id(a))  # 不变
     a.extend(b)
     print(a)
-    print(id(a)) # 不变
+    print(id(a))  # 不变
     a += b
     print(a)
-    print(id(a)) # 不变,相当于a.extend(b)的重载
+    print(id(a))  # 不变,相当于a.extend(b)的重载
     a = a + b
     print(a)
-    print(id(a)) # 改变
-
+    print(id(a))  # 改变
 
 
 if __name__ == '__main__':
-    # practice_list()
-    # practice_list_operate()
-    # init_list()
-    simplyfy_list()
+    pass
+# practice_list()
+# practice_list_operate()
+# init_list()
+# simplyfy_list()
