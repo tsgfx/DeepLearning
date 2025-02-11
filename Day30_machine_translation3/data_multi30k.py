@@ -19,7 +19,6 @@ from sacremoses import MosesTokenizer
 from pathlib import Path
 import argparse
 
-
 def moses_cut(in_file, out_file, lang):
     mt = MosesTokenizer(lang=lang) # 初始化分词器
     out_f = open(out_file, "w", encoding="utf8")
